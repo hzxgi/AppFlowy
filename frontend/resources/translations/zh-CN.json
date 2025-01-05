@@ -79,6 +79,7 @@
     "chooseWorkspace": "选择您的工作区",
     "defaultName": "我的工作区",
     "create": "新建工作区",
+    "new": "新建工作空间",
     "importFromNotion": "从 Notion 导入",
     "learnMore": "了解更多",
     "reset": "重置工作区",
@@ -136,7 +137,8 @@
     "copyLinkFailed": "无法将链接复制到剪贴板",
     "copyLinkToBlockSuccess": "区块链接已复制到剪贴板",
     "copyLinkToBlockFailed": "无法将区块链接复制到剪贴板",
-    "manageAllSites": "管理所有站点"
+    "manageAllSites": "管理所有站点",
+    "updatePathName": "更新路径名"
   },
   "moreAction": {
     "small": "小",
@@ -149,7 +151,11 @@
     "charCount": "字符数:{}",
     "createdAt": "创建于 :{}",
     "deleteView": "删除",
-    "duplicateView": "复制"
+    "duplicateView": "复制",
+    "wordCountLabel": "字数：",
+    "charCountLabel": "字符计数:",
+    "createdAtLabel": "创建于：",
+    "syncedAtLabel": "同步："
   },
   "importPanel": {
     "textAndMarkdown": "文本 和 Markdown",
@@ -170,7 +176,9 @@
     "addToFavorites": "添加到收藏夹",
     "copyLink": "复制链接",
     "changeIcon": "更改图标",
-    "collapseAllPages": "收起全部子页面"
+    "collapseAllPages": "收起全部子页面",
+    "movePageTo": "将页面移动到",
+    "move": "移动"
   },
   "blankPageTitle": "空白页",
   "newPageText": "新页面",
@@ -186,21 +194,35 @@
     "relatedQuestion": "相关问题",
     "serverUnavailable": "服务暂时不可用，请稍后再试",
     "aiServerUnavailable": "🌈 不妙！🌈 一只独角兽吃掉了我们的回复。请重试！",
+    "retry": "重试",
     "clickToRetry": "点击重试",
     "regenerateAnswer": "重新生成",
     "question1": "如何使用 Kanban 来管理任务",
     "question2": "介绍一下 GTD 工作法",
     "question3": "为什么使用 Rust",
     "question4": "使用现有食材制定一份菜谱",
+    "question5": "为我的页面创建一幅插图",
+    "question6": "为我接下来的一周制定一个待办事项列表",
     "aiMistakePrompt": "AI 可能出错，请验证重要信息",
     "chatWithFilePrompt": "你想与文件对话吗？",
     "indexFileSuccess": "文件索引成功",
     "inputActionNoPages": "无页面结果",
+    "referenceSource": "找到 {} 个来源",
     "clickToMention": "点击以提及页面",
     "uploadFile": "上传聊天使用的 PDF、md 或 txt 文件",
     "questionDetail": "{} 你好！我能怎么帮到你？",
     "indexingFile": "正在索引 {}",
-    "referenceSource": "找到 {} 个来源",
+    "generatingResponse": "生成响应",
+    "selectSources": "选择来源",
+    "sourcesLimitReached": "您只能选择最多3个顶级文档及其子文档",
+    "sourceUnsupported": "我们目前不支持与数据库聊天",
+    "regenerate": "重试",
+    "addToPageButton": "将消息添加到页面",
+    "addToPageTitle": "添加消息到...",
+    "addToNewPage": "创建新页面",
+    "addToNewPageName": "从\"{}\"提取的消息",
+    "addToNewPageSuccessToast": "已将消息添加到",
+    "openPagePreviewFailedToast": "无法打开页面",
     "referenceSources": "找到 {} 个来源",
     "questionTitle": "想法"
   },
@@ -258,7 +280,8 @@
     "moreButtonToolTip": "删除、重命名等等...",
     "addPageTooltip": "在其中快速添加页面",
     "defaultNewPageName": "未命名页面",
-    "renameDialog": "重命名"
+    "renameDialog": "重命名",
+    "pageNameSuffix": "复制"
   },
   "noPagesInside": "里面没有页面",
   "toolbar": {
@@ -296,6 +319,7 @@
   "sideBar": {
     "closeSidebar": "关闭侧边栏",
     "openSidebar": "打开侧边栏",
+    "expandSidebar": "扩展为整页",
     "personal": "个人的",
     "private": "私人的",
     "workspace": "工作区",
@@ -338,6 +362,7 @@
     "askOwnerToUpgradeToAIMax": "你的工作区即将用尽免费 AI 回应。请联系工作区所有者升级计划或购买 AI 插件",
     "askOwnerToUpgradeToAIMaxIOS": "你的工作区即将用尽免费 AI 回应限额。",
     "purchaseStorageSpace": "购买存储空间",
+    "singleFileProPlanLimitationDescription": "您已超出免费计划允许的最大文件上传大小。请升级到专业计划以上传更大的文件",
     "purchaseAIResponse": "购买",
     "askOwnerToUpgradeToLocalAI": "联系工作区所有者启用设备上 AI",
     "upgradeToAILocal": "在你的设备上运行本地模型，极致保护隐私",
@@ -375,6 +400,7 @@
     "upload": "上传",
     "edit": "编辑",
     "delete": "删除",
+    "copy": "复制",
     "duplicate": "复制",
     "putback": "放回去",
     "update": "更新",
@@ -413,6 +439,9 @@
     "viewing": "查看",
     "editing": "编辑",
     "gotIt": "我知道了",
+    "retry": "重试",
+    "uploadFailed": "上传失败。",
+    "copyLinkOriginal": "将链接复制到原始位置",
     "Done": "完成",
     "Cancel": "取消",
     "OK": "确认"
@@ -453,7 +482,12 @@
       "homepageHeader": "主页",
       "updateNamespace": "更新名字空间",
       "removeHomepage": "移除主页",
-      "selectHomePage": "选择一个页面"
+      "selectHomePage": "选择一个页面",
+      "clearHomePage": "清除此名称空间的主页",
+      "customUrl": "自定义网址",
+      "namespace": {
+        "description": "这种变化将适用于此名称空间上所有发布的页面"
+      }
     },
     "accountPage": {
       "menuLabel": "我的账户",
